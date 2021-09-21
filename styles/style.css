@@ -1,0 +1,219 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+html, body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+    max-width: 1440px;
+
+}
+header {
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/header-bg.svg");
+    color: #FFFFFF;
+
+}
+header .navbar {
+  display: flex;
+  width: 100%;
+  height: 175px;
+}
+header .navbar1 {
+  display: flex;
+  height: 100px;
+  margin-left: 80px;
+}
+header .navbar1 p {
+  width: 133px;
+  text-align: center;
+  padding-top: 40px;
+}
+header .logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+header .navbar2 {
+  display: flex;
+  height: 100px;
+  margin-right: 80px;
+}
+header .navbar2 p{
+  width: 133px;
+  text-align: center;
+  padding-top: 40px;
+}
+header .container {
+  display: flex;
+  margin-top: 151px;
+}
+header .timetable {
+  writing-mode: vertical-lr;
+  margin-left: 81px;
+}
+header .container1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 50px;
+
+}
+header .container1 p {
+  height: 20px;
+}
+header .container1 h1 {
+  font-family: Banny;
+  font-size: 96px;
+
+}
+header .container1 hr {
+  width: 60px;
+  height: 5px;
+  background-color: #E8C300;
+}
+header .container1 button {
+  width: 200px;
+  height: 60px;
+  background-color: #E8C300;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin: 20px;
+}
+header .container .social-network {
+  margin-top: 50px;
+  margin-right: 79px;
+}
+main .about {
+  width: 100%;
+  height: 675px;
+  background: #E5E5E5;
+}
+main .team {
+  width: 100%;
+  height: 675px;
+  background-image: url("../images/team-bg.svg");
+}
+main .booking {
+  width: 100%;
+  height: 675px;
+  background: #E5E5E5;
+}
+main .specialties {
+  width: 100%;
+  height: 675px;
+  background-image: url("../images/specialties-bg.svg");
+}
+main .menu {
+  width: 100%;
+  height: 920px;
+  background: #E5E5E5;
+}
+main .galerie {
+  width: 100%;
+  height: 1035px;
+}
+main .galerie .background-img {
+  width: 100%;
+  height: 675px;
+  background-image: url("../images/galerie-bg.svg");
+}
+main .galerie .galerie-images {
+  display: flex;
+}
+main .galerie img {
+  width: 360px;
+  height: 360px;
+
+}
+main .contacts {
+  width: 100%;
+  height: 647px;
+  background: #FFFFFF;
+}
+main .maps {
+  width: 100%;
+  height: 475px;
+  background-image: url("../images/map.png");
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.9);
+}
