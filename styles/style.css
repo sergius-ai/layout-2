@@ -17,6 +17,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -77,8 +79,7 @@ select {
   }
 }
 body {
-    max-width: 1440px;
-
+  max-width: 1440px;
 }
 header {
     width: 100%;
@@ -147,6 +148,8 @@ header .container1 hr {
   width: 60px;
   height: 5px;
   background-color: #E8C300;
+  border: none;
+  border-radius: 50px;
 }
 header .container1 button {
   width: 200px;
@@ -188,8 +191,10 @@ main .about .container .container1 hr {
   width: 60px;
   height: 5px;
   background-color: #E8C300;
+  border: none;
+  border-radius: 50px;
 }
-main .about .container .container1 p {
+main .about .container .container1 .p1 {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -205,6 +210,68 @@ main .team {
   width: 100%;
   height: 675px;
   background-image: url("../images/team-bg.svg");
+  color: #E5E5E5;
+  text-align: center;
+}
+main .team h6{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  /* or 117% */
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  display: flex;
+}
+main .team .container {
+  display: flex;
+  padding-bottom: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+main .team .container .container1 {
+  display: inline-table;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .team .container .container1 h4 {
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 48px;
+}
+main .team .container .container1 hr {
+  width: 60px;
+  height: 5px;
+  background-color: #E8C300;
+  border: none;
+  border-radius: 50px;
+}
+main .team .container .container1 .p1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  
+}
+main .team .container .container1 .p2 {
+
+}
+main .team .container img {
+  width: 588px;
+  height: 475;
 }
 main .booking {
   width: 100%;
