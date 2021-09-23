@@ -250,6 +250,7 @@ main .team .container .container1 h4 {
   font-family: Banny;
   font-size: 36px;
   line-height: 48px;
+  
 }
 main .team .container .container1 hr {
   width: 60px;
@@ -276,7 +277,109 @@ main .team .container img {
 main .booking {
   width: 100%;
   height: 675px;
+  background: #FFFFFF;
+}
+main .booking .container {
+  display: flex;
+  padding-top: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+main .booking .container .container1 {
+  display: inline-table;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+}
+main .booking .container .container1 h4 {
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+  
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #000000;
+  
+  border-radius: 5px;
+}
+main .booking .container .container1 hr {
+  width: 60px;
+  height: 5px;
+  background-color: #E8C300;
+  border: none;
+  border-radius: 50px;
+}
+main .booking .container .container1 div input {
+  width: 277px;
+  height: 60px;
+  margin: 5px;
+  border: none;
   background: #E5E5E5;
+  border-radius: 5px;
+  padding-left: 20px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  text-indent: 20px;
+  
+  color: rgba(51, 51, 51, 0.5);
+  
+  border-radius: 5px;
+
+}
+main .booking .container .container1 div button {
+  width: 568px;
+  height: 60px;
+  margin: 5px;
+
+  font-style: normal;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #FFFFFF;
+
+  background: #E8C300;
+  border: none;
+  border-radius: 5px;
+  border-color: #E8C300;
+  
+}
+main .booking .container img {
+  width: 600px;
+  height: 475px;
+}
+main .booking p {
+  display: flex;
+  width: 100%;
+  margin: 45px;
+  font-style: normal;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  /* or 100% */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  color: rgba(51, 51, 51, 0.5);
+  
+  border-radius: 5px;
 }
 main .specialties {
   width: 100%;
